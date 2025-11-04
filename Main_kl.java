@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -18,26 +17,26 @@ public class Main {
         String escolha = entrada.next().toUpperCase();
 
         switch (escolha) {
-            case "C":
-                Contagem.runDemo();
+            case "A":
+                NumeroPrimo.runDemo();
                 break;
             case "B":
                 Fibonacci.runDemo();
                 break;
-            case "F":
-                MaximoDivisorComum.runDemo();
-                break;
-            case "A":
-                NumeroPrimo.runDemo();
-                break;
-            case "G":
-                Pessoa.runDemo();
+            case "C":
+                Contagem.runDemo();
                 break;
             case "D":
                 QuickSort.runDemo();
                 break;
             case "E":
                 TrocaDeVariaveis.runDemo();
+                break;
+            case "F":
+                MaximoDivisorComum.runDemo();
+                break;
+            case "G":
+                Pessoa.runDemo();
                 break;
             default:
                 System.out.println("Opção não reconhecida!");
@@ -219,3 +218,4 @@ class TrocaDeVariaveis {
         System.out.println("Depois -> X: " + x + " | Y: " + y);
     }
 }
+
